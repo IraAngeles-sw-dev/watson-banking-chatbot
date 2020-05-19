@@ -63,9 +63,9 @@ Provision the following services:
 
 > **NOTE**: If you will be using the `Deploy to Cloud Foundry on IBM Cloud` deployment option, then you can skip this step. That deployment option automatically creates the services and links them to your application.
 
-The instructions will depend on whether you are provisioning services using IBM Cloud Pak for Data or on IBM Cloud.
+<!-- The instructions will depend on whether you are provisioning services using IBM Cloud Pak for Data or on IBM Cloud.
 
-Click to expand one:
+Click to expand one: -->
 
 <!-- <details><summary><b>IBM Cloud Pak for Data</b></summary>
 <p>
@@ -76,8 +76,11 @@ Click to expand one:
 The services are not available by default. An administrator must install them on the IBM Cloud Pak for Data platform, and you must be given access to the service. To determine whether the service is installed, Click the <b>Services</b> icon (<img class="lazycontent" src="doc/source/images/services_icon.png" alt="services_icon"/>) and check whether the service is enabled.
 </details> -->
 
-<details><summary><b>IBM Cloud</b></summary>
-<p>
+<!-- <details><summary><b>IBM Cloud</b></summary>
+<p> -->
+
+IBM Cloud
+
 <h5>Create the service instances</h5>
   <ul>
     <li>If you do not have an IBM Cloud account, register for a free trial account <a href="https://ibm.biz/BdqyTb">here</a>.</li>
@@ -85,11 +88,13 @@ The services are not available by default. An administrator must install them on
     <li>Click <a href="https://cloud.ibm.com/catalog/services/discovery">here</a> to create a <b>Discovery</b> instance.</li>
     <li>Click <a href="https://cloud.ibm.com/catalog/services/natural-language-understanding">here</a> to create a <b>Natural Language Understanding</b> instance.</li>
   </ul>
-</details>
+<!-- </details> -->
 
 ### 3. Deploy the application
 
-Click on one of the options below for instructions on deploying the Node.js server.
+Instructions on deploying the Node.js server.
+
+<!-- Click on one of the options below for instructions on deploying the Node.js server. -->
 
 <!-- | | | |
 | :-: | :-: | :-: |
@@ -107,9 +112,9 @@ The web app presents a customer service chatbot. Interact with the chatbot by pr
 
 ### 5. Customize the Watson Assistant skill
 
-The following instructions will depend on if you are provisioning Assistant from IBM Cloud or from an IBM Cloud Pak for Data cluster. Choose one:
+<!-- The following instructions will depend on if you are provisioning Assistant from IBM Cloud or from an IBM Cloud Pak for Data cluster. Click to expand: -->
 
-<details><summary>Provision on IBM Cloud Pak for Data</summary>
+<!-- <details><summary>Provision on IBM Cloud Pak for Data</summary>
 <p>
 
 * Find the Assistant service in your list of `Provisioned Instances` in your IBM Cloud Pak for Data Dashboard.
@@ -123,10 +128,12 @@ The following instructions will depend on if you are provisioning Assistant from
 * Select `Everything` and click `Import`.
 
 </p>
-</details>
+</details> -->
 
-<details><summary>Provision on IBM Cloud</summary>
-<p>
+<!-- <details><summary>Provision on IBM Cloud</summary>
+<p> -->
+
+Provision on IBM Cloud
 
 * Find the Assistant service in your IBM Cloud Dashboard.
 * Click on the service and then click on `Launch tool`.
@@ -137,8 +144,8 @@ The following instructions will depend on if you are provisioning Assistant from
 * Click `Choose JSON file`, go to your cloned repo dir, and `Open` the JSON file in `data/conversation/workspaces/banking_US.json` (or use the old full version in `full_banking.json`). `banking_IN.json` is used for content for banking in India and `banking_US.json` is used for content for banking in United States.
 * Select `Everything` and click `Import`.
 
-</p>
-</details>
+<!-- </p>
+</details> -->
 
 To find the `Skill ID` for Watson Assistant:
 

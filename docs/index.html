@@ -201,8 +201,9 @@
 <blockquote>
 <p><strong>NOTE</strong>: If you will be using the <code>Deploy to Cloud Foundry on IBM Cloud</code> deployment option, then you can skip this step. That deployment option automatically creates the services and links them to your application.</p>
 </blockquote>
-<p>The instructions will depend on whether you are provisioning services using IBM Cloud Pak for Data or on IBM Cloud.</p>
-<p>Click to expand one:</p>
+<!-- The instructions will depend on whether you are provisioning services using IBM Cloud Pak for Data or on IBM Cloud.
+
+Click to expand one: -->
 <!-- <details><summary><b>IBM Cloud Pak for Data</b></summary>
 <p>
 <i>Use the following instructions for each of the three services.</i>
@@ -211,19 +212,20 @@
 <p>
 The services are not available by default. An administrator must install them on the IBM Cloud Pak for Data platform, and you must be given access to the service. To determine whether the service is installed, Click the <b>Services</b> icon (<img class="lazycontent" src="doc/source/images/services_icon.png" alt="services_icon"/>) and check whether the service is enabled.
 </details> -->
-<details><summary><b>IBM Cloud</b></summary>
-<p>
-</p><h5 id="create-the-service-instances">Create the service instances</h5>
+<!-- <details><summary><b>IBM Cloud</b></summary>
+<p> -->
+<p>IBM Cloud</p>
+<p></p><h5 id="create-the-service-instances">Create the service instances</h5>
   <ul>
     <li>If you do not have an IBM Cloud account, register for a free trial account <a href="https://ibm.biz/BdqyTb" target="_blank">here</a>.</li>
     <li>Click <a href="https://cloud.ibm.com/catalog/services/watson-assistant" target="_blank">here</a> to create a <b>Watson Assistant</b> instance.</li>
     <li>Click <a href="https://cloud.ibm.com/catalog/services/discovery" target="_blank">here</a> to create a <b>Discovery</b> instance.</li>
     <li>Click <a href="https://cloud.ibm.com/catalog/services/natural-language-understanding" target="_blank">here</a> to create a <b>Natural Language Understanding</b> instance.</li>
   </ul>
-</details>
-
+<!-- </details> --><p></p>
 <h3 id="3-deploy-the-application">3. Deploy the application</h3>
-<p>Click on one of the options below for instructions on deploying the Node.js server.</p>
+<p>Instructions on deploying the Node.js server.</p>
+<!-- Click on one of the options below for instructions on deploying the Node.js server. -->
 <!-- | | | |
 | :-: | :-: | :-: |
 | [![local](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/local.png)](doc/source/local.md) | [![openshift](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/openshift.png)](doc/source/openshift.md) | [![public](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/cf.png)](doc/source/cf.md) | -->
@@ -245,8 +247,8 @@ The services are not available by default. An administrator must install them on
 <p>The web app presents a customer service chatbot. Interact with the chatbot by pressing the buttons when prompted or use the <code>Type something</code> box. The chatbot is powered by Watson Assistant with additional information coming from Discovery and Natural Language Understanding.</p>
 <p><img src="doc/source/images/demo.gif" alt="demo"></p>
 <h3 id="5-customize-the-watson-assistant-skill">5. Customize the Watson Assistant skill</h3>
-<p>The following instructions will depend on if you are provisioning Assistant from IBM Cloud or from an IBM Cloud Pak for Data cluster. Choose one:</p>
-<details><summary>Provision on IBM Cloud Pak for Data</summary>
+<!-- The following instructions will depend on if you are provisioning Assistant from IBM Cloud or from an IBM Cloud Pak for Data cluster. Click to expand: -->
+<!-- <details><summary>Provision on IBM Cloud Pak for Data</summary>
 <p>
 
 * Find the Assistant service in your list of `Provisioned Instances` in your IBM Cloud Pak for Data Dashboard.
@@ -260,23 +262,22 @@ The services are not available by default. An administrator must install them on
 * Select `Everything` and click `Import`.
 
 </p>
-</details>
-
-<details><summary>Provision on IBM Cloud</summary>
-<p>
-
-* Find the Assistant service in your IBM Cloud Dashboard.
-* Click on the service and then click on `Launch tool`.
-* Go to the `Skills` tab.
-* Click `Create skill`.
-* Select the `Dialog skill` option and then click `Next`.
-* Click the `Import skill` tab.
-* Click `Choose JSON file`, go to your cloned repo dir, and `Open` the JSON file in `data/conversation/workspaces/banking_US.json` (or use the old full version in `full_banking.json`). `banking_IN.json` is used for content for banking in India and `banking_US.json` is used for content for banking in United States.
-* Select `Everything` and click `Import`.
-
-</p>
-</details>
-
+</details> -->
+<!-- <details><summary>Provision on IBM Cloud</summary>
+<p> -->
+<p>Provision on IBM Cloud</p>
+<ul>
+<li>Find the Assistant service in your IBM Cloud Dashboard.</li>
+<li>Click on the service and then click on <code>Launch tool</code>.</li>
+<li>Go to the <code>Skills</code> tab.</li>
+<li>Click <code>Create skill</code>.</li>
+<li>Select the <code>Dialog skill</code> option and then click <code>Next</code>.</li>
+<li>Click the <code>Import skill</code> tab.</li>
+<li>Click <code>Choose JSON file</code>, go to your cloned repo dir, and <code>Open</code> the JSON file in <code>data/conversation/workspaces/banking_US.json</code> (or use the old full version in <code>full_banking.json</code>). <code>banking_IN.json</code> is used for content for banking in India and <code>banking_US.json</code> is used for content for banking in United States.</li>
+<li>Select <code>Everything</code> and click <code>Import</code>.</li>
+</ul>
+<!-- </p>
+</details> -->
 <p>To find the <code>Skill ID</code> for Watson Assistant:</p>
 <ul>
 <li>Go back to the <code>Skills</code> tab.</li>
@@ -402,7 +403,7 @@ The services are not available by default. An administrator must install them on
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-05-19T04:01:48.232Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-19T04:01:58.654Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-05-19T04:07:51.645Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-19T04:08:04.029Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
