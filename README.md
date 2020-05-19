@@ -10,9 +10,9 @@ When the reader has completed this pattern, they will understand how to:
 * Use Watson Discovery with passage retrieval to find answers in FAQ documents
 * Identify location entities with Watson Natural Language Understanding
 
-> **NOTE**: This code pattern has been updated to include instructions for accessing Watson services running on IBM Cloud Pak for Data. These updates can be found in the specific instructions for deploying your app [locally](doc/source/local.md), or deploying your app to [OpenShift on IBM Cloud](doc/source/openshift.md). The main change required is that your application will need additional credentials to access the IBM Cloud Pak for Data cluster that is hosting the Watson services.
+<!-- > **NOTE**: This code pattern has been updated to include instructions for accessing Watson services running on IBM Cloud Pak for Data. These updates can be found in the specific instructions for deploying your app [locally](doc/source/local.md), or deploying your app to [OpenShift on IBM Cloud](doc/source/openshift.md). The main change required is that your application will need additional credentials to access the IBM Cloud Pak for Data cluster that is hosting the Watson services.
 >
-> Click [here](https://www.ibm.com/products/cloud-pak-for-data) for more information about IBM Cloud Pak for Data.
+> Click [here](https://www.ibm.com/products/cloud-pak-for-data) for more information about IBM Cloud Pak for Data. -->
 
 ![architecture](doc/source/images/architecture.png)
 
@@ -67,14 +67,14 @@ The instructions will depend on whether you are provisioning services using IBM 
 
 Click to expand one:
 
-<details><summary><b>IBM Cloud Pak for Data</b></summary>
+<!-- <details><summary><b>IBM Cloud Pak for Data</b></summary>
 <p>
 <i>Use the following instructions for each of the three services.</i>
 <p>
 <h5>Install and provision service instances</h5>
 <p>
 The services are not available by default. An administrator must install them on the IBM Cloud Pak for Data platform, and you must be given access to the service. To determine whether the service is installed, Click the <b>Services</b> icon (<img class="lazycontent" src="doc/source/images/services_icon.png" alt="services_icon"/>) and check whether the service is enabled.
-</details>
+</details> -->
 
 <details><summary><b>IBM Cloud</b></summary>
 <p>
@@ -91,9 +91,13 @@ The services are not available by default. An administrator must install them on
 
 Click on one of the options below for instructions on deploying the Node.js server.
 
-| | | |
+<!-- | | | |
 | :-: | :-: | :-: |
-| [![local](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/local.png)](doc/source/local.md) | [![openshift](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/openshift.png)](doc/source/openshift.md) | [![public](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/cf.png)](doc/source/cf.md) |
+| [![local](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/local.png)](doc/source/local.md) | [![openshift](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/openshift.png)](doc/source/openshift.md) | [![public](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/cf.png)](doc/source/cf.md) | -->
+
+| | |
+| :-: | :-: | :-: |
+| [![local](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/local.png)](doc/source/local.md) | [![public](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/cf.png)](doc/source/cf.md) |
 
 ### 4. Use the web app
 
@@ -155,9 +159,9 @@ To view the Assistant dialog, click on the skill and choose the
 
 By default, the application will create a collection named **watson-banking-chatbot**, but you can configure it to use another collection by setting the run-time environment variables `DISCOVERY_COLLECTION_ID` and `DISCOVERY_ENVIRONMENT_ID`.
 
-The following instructions will depend on if you are provisioning Discovery from IBM Cloud or from an IBM Cloud Pak for Data cluster. Choose one:
+The following instructions will depend on if you are provisioning Discovery from IBM Cloud or from an IBM Cloud Pak for Data cluster. Cick to expand:
 
-<details><summary>Provision on IBM Cloud Pak for Data</summary>
+<!-- <details><summary>Provision on IBM Cloud Pak for Data</summary>
 <p>
 
 * Find the Discovery service in your list of `Provisioned Instances` in your IBM Cloud Pak for Data Dashboard.
@@ -178,7 +182,7 @@ The following instructions will depend on if you are provisioning Discovery from
   ![disco_cpd_projectid](doc/source/images/disco_cpd_projectid.png)
 
 </p>
-</details>
+</details> -->
 
 <details><summary>Provision on IBM Cloud</summary>
 <p>

@@ -56,6 +56,7 @@ try {
 
 const assistant = new AssistantV1({
   version: '2019-02-28',
+  // version: '2020-04-01',
   authenticator: auth,
   url: url,
   disableSslVerification: disableSSL,

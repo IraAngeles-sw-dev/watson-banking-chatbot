@@ -152,10 +152,9 @@
 <li>Use Watson Discovery with passage retrieval to find answers in FAQ documents</li>
 <li>Identify location entities with Watson Natural Language Understanding</li>
 </ul>
-<blockquote>
-<p><strong>NOTE</strong>: This code pattern has been updated to include instructions for accessing Watson services running on IBM Cloud Pak for Data. These updates can be found in the specific instructions for deploying your app <a href="doc/source/local.md">locally</a>, or deploying your app to <a href="doc/source/openshift.md">OpenShift on IBM Cloud</a>. The main change required is that your application will need additional credentials to access the IBM Cloud Pak for Data cluster that is hosting the Watson services.</p>
-<p>Click <a href="https://www.ibm.com/products/cloud-pak-for-data" target="_blank">here</a> for more information about IBM Cloud Pak for Data.</p>
-</blockquote>
+<!-- > **NOTE**: This code pattern has been updated to include instructions for accessing Watson services running on IBM Cloud Pak for Data. These updates can be found in the specific instructions for deploying your app [locally](doc/source/local.md), or deploying your app to [OpenShift on IBM Cloud](doc/source/openshift.md). The main change required is that your application will need additional credentials to access the IBM Cloud Pak for Data cluster that is hosting the Watson services.
+>
+> Click [here](https://www.ibm.com/products/cloud-pak-for-data) for more information about IBM Cloud Pak for Data. -->
 <p><img src="doc/source/images/architecture.png" alt="architecture"></p>
 <h2 id="flow">Flow</h2>
 <ol>
@@ -204,20 +203,19 @@
 </blockquote>
 <p>The instructions will depend on whether you are provisioning services using IBM Cloud Pak for Data or on IBM Cloud.</p>
 <p>Click to expand one:</p>
-<details><summary><b>IBM Cloud Pak for Data</b></summary>
+<!-- <details><summary><b>IBM Cloud Pak for Data</b></summary>
 <p>
 <i>Use the following instructions for each of the three services.</i>
-</p><p>
-</p><h5 id="install-and-provision-service-instances">Install and provision service instances</h5>
 <p>
-The services are not available by default. An administrator must install them on the IBM Cloud Pak for Data platform, and you must be given access to the service. To determine whether the service is installed, Click the <b>Services</b> icon (<img class="lazycontent" src="doc/source/images/services_icon.png" alt="services_icon">) and check whether the service is enabled.
-</p></details>
-
+<h5>Install and provision service instances</h5>
+<p>
+The services are not available by default. An administrator must install them on the IBM Cloud Pak for Data platform, and you must be given access to the service. To determine whether the service is installed, Click the <b>Services</b> icon (<img class="lazycontent" src="doc/source/images/services_icon.png" alt="services_icon"/>) and check whether the service is enabled.
+</details> -->
 <details><summary><b>IBM Cloud</b></summary>
 <p>
 </p><h5 id="create-the-service-instances">Create the service instances</h5>
   <ul>
-    <li>If you do not have an IBM Cloud account, register for a free trial account <a href="https://cloud.ibm.com/login" target="_blank">here</a>.</li>
+    <li>If you do not have an IBM Cloud account, register for a free trial account <a href="https://ibm.biz/BdqyTb" target="_blank">here</a>.</li>
     <li>Click <a href="https://cloud.ibm.com/catalog/services/watson-assistant" target="_blank">here</a> to create a <b>Watson Assistant</b> instance.</li>
     <li>Click <a href="https://cloud.ibm.com/catalog/services/discovery" target="_blank">here</a> to create a <b>Discovery</b> instance.</li>
     <li>Click <a href="https://cloud.ibm.com/catalog/services/natural-language-understanding" target="_blank">here</a> to create a <b>Natural Language Understanding</b> instance.</li>
@@ -226,10 +224,12 @@ The services are not available by default. An administrator must install them on
 
 <h3 id="3-deploy-the-application">3. Deploy the application</h3>
 <p>Click on one of the options below for instructions on deploying the Node.js server.</p>
+<!-- | | | |
+| :-: | :-: | :-: |
+| [![local](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/local.png)](doc/source/local.md) | [![openshift](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/openshift.png)](doc/source/openshift.md) | [![public](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/cf.png)](doc/source/cf.md) | -->
 <table>
 <thead>
 <tr>
-<th style="text-align:center"></th>
 <th style="text-align:center"></th>
 <th style="text-align:center"></th>
 </tr>
@@ -237,7 +237,6 @@ The services are not available by default. An administrator must install them on
 <tbody>
 <tr>
 <td style="text-align:center"><a href="doc/source/local.md"><img src="https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/local.png" alt="local"></a></td>
-<td style="text-align:center"><a href="doc/source/openshift.md"><img src="https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/openshift.png" alt="openshift"></a></td>
 <td style="text-align:center"><a href="doc/source/cf.md"><img src="https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/cf.png" alt="public"></a></td>
 </tr>
 </tbody>
@@ -292,8 +291,8 @@ The services are not available by default. An administrator must install them on
 <p><img src="doc/source/images/dialog.png" alt="dialog"></p>
 <h3 id="5-load-discovery-documents">5. Load Discovery documents</h3>
 <p>By default, the application will create a collection named <strong>watson-banking-chatbot</strong>, but you can configure it to use another collection by setting the run-time environment variables <code>DISCOVERY_COLLECTION_ID</code> and <code>DISCOVERY_ENVIRONMENT_ID</code>.</p>
-<p>The following instructions will depend on if you are provisioning Discovery from IBM Cloud or from an IBM Cloud Pak for Data cluster. Choose one:</p>
-<details><summary>Provision on IBM Cloud Pak for Data</summary>
+<p>The following instructions will depend on if you are provisioning Discovery from IBM Cloud or from an IBM Cloud Pak for Data cluster. Cick to expand:</p>
+<!-- <details><summary>Provision on IBM Cloud Pak for Data</summary>
 <p>
 
 * Find the Discovery service in your list of `Provisioned Instances` in your IBM Cloud Pak for Data Dashboard.
@@ -309,13 +308,12 @@ The services are not available by default. An administrator must install them on
 * Use `Drag and drop your documents here or select documents` to seed the content with the five documents in `data/discovery/docs` of your cloned repo.
 * Click on the `Integrate and deploy` option from the left-side menu of the Discovery panel. Then select the `View API Details` tab to view the `Project Id`. Use this as the `Collection ID` value when setting up your run-time environment.
 
-&gt; **NOTE**: The `Environment Id` for Cloud Pak for Data collections is always set to `default`.
+> **NOTE**: The `Environment Id` for Cloud Pak for Data collections is always set to `default`.
 
   ![disco_cpd_projectid](doc/source/images/disco_cpd_projectid.png)
 
 </p>
-</details>
-
+</details> -->
 <details><summary>Provision on IBM Cloud</summary>
 <p>
 
@@ -404,7 +402,7 @@ The services are not available by default. An administrator must install them on
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-05-06T07:59:20.070Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-08T08:49:23.658Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-05-19T04:01:48.232Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-19T04:01:58.654Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -412,10 +410,6 @@ The services are not available by default. An administrator must install them on
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
-    
-        
-        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
