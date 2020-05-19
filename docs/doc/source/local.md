@@ -9,7 +9,7 @@ This document shows how to run the application using on your local machine.
 
 ### 1. Configure credentials
 
-The following instructions will depend on if you are provisioning your services from IBM Cloud or from an IBM Cloud Pak for Data cluster. Choose one:
+<!-- The following instructions will depend on if you are provisioning your services from IBM Cloud or from an IBM Cloud Pak for Data cluster. Choose one:
 
 <details><summary>Provision on IBM Cloud Pak for Data</summary>
 <p>
@@ -96,10 +96,12 @@ LOCALE=en_US
 > Note: if you are trying to run this project as workshop in India then use `Locale=en_IN`
 
 </p>
-</details>
+</details> -->
 
-<details><summary>Provision on IBM Cloud</summary>
-<p>
+<!-- <details><summary>Provision on IBM Cloud</summary>
+<p> -->
+
+Provision on IBM Cloud
 
 Collect the credentials for the IBM Cloud services (Assistant, Discovery and Natural Language Understanding). For each of these services:
 
@@ -165,7 +167,7 @@ LOCALE=en_US
 > Note: if you are trying to run this project as workshop in India then use `Locale=en_IN`
 
 </p>
-</details>
+<!-- </details> -->
 
 ### 2. Run the application
 

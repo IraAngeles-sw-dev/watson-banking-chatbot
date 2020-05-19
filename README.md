@@ -102,7 +102,7 @@ Instructions on deploying the Node.js server.
 
 | | |
 | :-: | :-: | :-: |
-| [![local](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/local.png)](doc/source/local.md) | [![public](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/cf.png)](doc/source/cf.md) |
+| [![local](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/local.png)](./doc/source/local.md) | [![public](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/cf.png)](./doc/source/cf.md) |
 
 ### 4. Use the web app
 
