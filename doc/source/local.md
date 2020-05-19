@@ -166,7 +166,7 @@ LOCALE=en_US
 
 > Note: if you are trying to run this project as workshop in India then use `Locale=en_IN`
 
-</p>
+<!-- </p> -->
 <!-- </details> -->
 
 ### 2. Run the application
